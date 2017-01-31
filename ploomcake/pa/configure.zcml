@@ -18,15 +18,17 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="ploomcake.pa uninstall"
+      directory="profiles/uninstall"
+      description="Installs the ploomcake.pa package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+
     <utility factory=".install_util.PloomCakePACake"
              name="ploomcake.cake.pa"
         />
-  
-
- <utility factory=".setuphandlers.HiddenProducts"
-           name="ploomcake.pa.hiddenproducts" />
-
-  <utility factory=".setuphandlers.HiddenProfiles"
-           name="ploomcake.pa.hiddenprofiles" />
 
 </configure>
